@@ -89,7 +89,7 @@ function lib:Window(text, preset, closebind)
     CloseBind = closebind or Enum.KeyCode.RightControl
     PresetColor = preset or Color3.fromRGB(44, 120, 224)
     fs = false
-    local gradient = Instance.new("UIGradient")
+    Local gradient = Instance.new("UIGradient")
     local Main = Instance.new("Frame")
     local TabHold = Instance.new("Frame")
     local TabHoldLayout = Instance.new("UIListLayout")
@@ -108,8 +108,8 @@ function lib:Window(text, preset, closebind)
     Main.ClipsDescendants = true
     Main.Visible = true
     gradient.Parent = Main
-    gradient.Color = ColorSequence.new(Color3.fromRGB(0,0,0), Color3.fromRGB(255,255,255))
-
+    gradient.Color = ColorSequence.new(Color3.fromRGB(60,60,60), Color3.fromRGB(255,255,255))
+    gradient.Rotation = -90
     TabHold.Name = "TabHold"
     TabHold.Parent = Main
     TabHold.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -465,7 +465,7 @@ function lib:Window(text, preset, closebind)
                     TweenService:Create(
                         Button,
                         TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-                        {BackgroundColor3 = Color3.fromRGB(37, 37, 37)}
+                        {BackgroundColor3 = Color3.fromRGB(60, 60, 60)}
                     ):Play()
                 end
             )
@@ -475,7 +475,7 @@ function lib:Window(text, preset, closebind)
                     TweenService:Create(
                         Button,
                         TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-                        {BackgroundColor3 = Color3.fromRGB(34, 34, 34)}
+                        {BackgroundColor3 = Color3.fromRGB(255, 255, 255)}
                     ):Play()
                 end
             )
