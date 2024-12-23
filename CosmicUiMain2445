@@ -89,7 +89,7 @@ function lib:Window(text, preset, closebind)
     CloseBind = closebind or Enum.KeyCode.RightControl
     PresetColor = preset or Color3.fromRGB(44, 120, 224)
     fs = false
-    local gradient = Instance.new("UIGradient")
+
     local Main = Instance.new("Frame")
     local TabHold = Instance.new("Frame")
     local TabHoldLayout = Instance.new("UIListLayout")
@@ -100,22 +100,20 @@ function lib:Window(text, preset, closebind)
     Main.Name = "Main"
     Main.Parent = ui
     Main.AnchorPoint = Vector2.new(0.5, 0.5)
-    Main.BackgroundColor3 = Color3.fromRGB(34, 19, 88)
+    Main.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
     Main.BackgroundTransparency = 0.3
     Main.BorderSizePixel = 0
     Main.Position = UDim2.new(0.5, 0, 0.5, 0)
-    Main.Size = UDim2.new(0, 0, 0, 0)
+    Main.Size = UDim2.new(0, 624,0, 444)
     Main.ClipsDescendants = true
     Main.Visible = true
-    gradient.Parent = Main
-    gradient.Color = ColorSequence.new(Color3.fromRGB(60,60,60), Color3.fromRGB(255,255,255))
-    gradient.Rotation = -90
+	
     TabHold.Name = "TabHold"
     TabHold.Parent = Main
-    TabHold.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    TabHold.BackgroundTransparency = 1.000
-    TabHold.Position = UDim2.new(0.0339285731, 0, 0.147335425, 0)
-    TabHold.Size = UDim2.new(0, 107, 0, 254)
+    TabHold.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+    TabHold.BackgroundTransparency = 0
+    TabHold.Position = UDim2.new(0.247, 0,0.275, 0)
+    TabHold.Size = UDim2.new(0, 174,0, 444)
 
     TabHoldLayout.Name = "TabHoldLayout"
     TabHoldLayout.Parent = TabHold
@@ -436,7 +434,7 @@ function lib:Window(text, preset, closebind)
             Button.Name = "Button"
             Button.Parent = Tab
             Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            Button.BackgroundTransparency = 0.95
+            Button.BackgroundTransparency = 0.9
             Button.Size = UDim2.new(0, 363, 0, 42)
             Button.AutoButtonColor = false
             Button.Font = Enum.Font.SourceSans
