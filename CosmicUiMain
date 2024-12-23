@@ -136,7 +136,7 @@ function lib:Window(text, preset, closebind)
     DragFrame.BackgroundTransparency = 1.000
     DragFrame.Size = UDim2.new(0, 560, 0, 41)
 
-    Main:TweenSize(UDim2.new(0, 560, 0, 319), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
+    Main:TweenSize(UDim2.new(0, 624,0, 444), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
 
     MakeDraggable(DragFrame, Main)
 
@@ -151,7 +151,7 @@ function lib:Window(text, preset, closebind)
                     knixhub.Enabled = false
                 else
                     Main:TweenSize(
-                        UDim2.new(0, 560, 0, 319),
+                        UDim2.new(0, 624,0, 444),
                         Enum.EasingDirection.Out,
                         Enum.EasingStyle.Quart,
                         .6,
